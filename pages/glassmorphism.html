@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glassmorphism — Best 2026 UI/UX Styles</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-dot"></span>
+        UI26
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html#styles">← All Styles</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-icon">☀</span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-hero glass-hero">
+    <div class="page-hero-content">
+      <p class="eyebrow">Style Guide</p>
+      <h1 class="page-title">Glassmorphism</h1>
+      <p class="page-sub">Frosted glass surfaces, translucent layers, and luminous depth. The style that made blur a design decision.</p>
+      <div class="pill-row">
+        <span class="pill">Layering</span>
+        <span class="pill">Depth</span>
+        <span class="pill">Translucency</span>
+        <span class="pill">2020 → Now</span>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-body">
+    <div class="container">
+
+      <div class="rule-grid">
+        <div class="rule-card">
+          <span class="rule-num">01</span>
+          <h3>Frosted Surface</h3>
+          <p>Use <code>backdrop-filter: blur()</code> on a semi-transparent container. The blur amount (8–20px) controls frosted intensity.</p>
+        </div>
+        <div class="rule-card">
+          <span class="rule-num">02</span>
+          <h3>Vivid Background</h3>
+          <p>Glass only reads as glass when the background behind it is colorful. Gradients, images, and neon blobs are perfect backdrops.</p>
+        </div>
+        <div class="rule-card">
+          <span class="rule-num">03</span>
+          <h3>Subtle Border</h3>
+          <p>A hairline <code>rgba(255,255,255,0.25)</code> border defines the edge of the glass surface without adding weight.</p>
+        </div>
+        <div class="rule-card">
+          <span class="rule-num">04</span>
+          <h3>Light Fill</h3>
+          <p>Fill the card with <code>rgba(255,255,255,0.10–0.20)</code> in dark contexts, or <code>rgba(255,255,255,0.55)</code> in light.</p>
+        </div>
+      </div>
+
+      <div class="demo-block">
+        <h2>Live Examples</h2>
+        <div class="glass-showcase">
+          <div class="glass-bg">
+            <div class="glass-blob gb1"></div>
+            <div class="glass-blob gb2"></div>
+            <div class="glass-blob gb3"></div>
+            <div class="glass-card-ex">
+              <p class="glass-card-title">Profile Card</p>
+              <p class="glass-card-sub">Glassmorphic surface on gradient</p>
+              <div class="glass-tags">
+                <span>Design</span>
+                <span>UI</span>
+              </div>
+            </div>
+            <div class="glass-pill-ex">Frosted pill</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-block">
+        <p class="code-label">CSS Recipe</p>
+        <pre><code>.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 0.5px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}</code></pre>
+      </div>
+
+      <div class="dos-donts">
+        <div class="dos">
+          <h3>Do</h3>
+          <ul>
+            <li>Use on vibrant, colorful backgrounds</li>
+            <li>Keep fill opacity low (10–20%)</li>
+            <li>Layer multiple glass panels for depth</li>
+            <li>Use high-contrast text on glass surfaces</li>
+          </ul>
+        </div>
+        <div class="donts">
+          <h3>Don't</h3>
+          <ul>
+            <li>Use on plain white or very dark backgrounds</li>
+            <li>Overuse blur — it tanks performance</li>
+            <li>Make the glass so opaque it loses the effect</li>
+            <li>Nest too many glass panels (depth paradox)</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="page-nav-btns">
+    <div class="container">
+      <a href="../index.html#styles" class="btn btn-ghost">← Back to Styles</a>
+      <a href="neobrutalism.html" class="btn btn-primary">Next: Neobrutalism →</a>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
